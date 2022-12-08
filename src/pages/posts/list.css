@@ -1,0 +1,77 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead tr {
+    background: rgb(162, 162, 162);
+}
+thead tr td input {
+    width: 80%;
+    padding: 8px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tbody tr td button {
+    padding: 8px 15px;
+    background-color: #41a271;
+    color: #fff;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+tbody tr td button:nth-child(even) {
+    background-color: red;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #41a271;
+    color: #fff;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button:disabled {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+.pagination button:hover {
+    filter: brightness(0.8);
+}
+.pagination button:disabled {
+    filter: brightness(1);
+}
+
+.pagination input[type="number"] {
+    width: 40px;
+    padding: 8px;
+    margin: 0 4px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.pagination select {
+    padding: 8px;
+    margin: 0 4px;
+    border-radius: 4px;
+}
